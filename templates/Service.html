@@ -1,0 +1,51 @@
+{%load static%}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Personal Portfolio</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<div class="container">
+
+    <div class="sidebar sidebarGo">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog/Intro/">My Intro</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="/blog/blog/">Blog</a></li>
+                <li><a href="/blog/Contact/">Contact</a></li>
+        </nav>
+    </div>
+    <div class='main'>
+        <div class="hamburger">
+            <img class="ham" src="{%static "images/ham.png"%}"  width="23px">
+            <img class="cross" src="{%static "images/cross.jpg"%}" width="23px">
+        </div>
+        <div class="services">
+            <p>We Create Minimal & Functional<br> website,Powerde by the Python<br> With Django.</p>
+        </div>
+        <h2>SERVICES</h2>
+        <h3>We Provide The Perfect Solution</h3>
+        <div class="card-group" >
+        
+            <div class="cardd border-primary">
+                <img src="{% static "images/graphic.jpg"%}">
+                <p>Graphic Design</p>    
+            </div>
+            <div class="cardd1">
+                <img src="{% static "images/webdesign.png"%}"> 
+                <p>Web Design</p>   
+            </div>
+            <div class="cardd2">
+                <img src="{% static "images/webdev.png"%}">   
+                <p>Web Development</p>   
+            </div>
+            <div class="cardd3">
+                <img src="{% static "images/security.jpg"%}">   
+                <p>security</p>   
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'index.js' %}"></script>

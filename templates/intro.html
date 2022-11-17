@@ -1,0 +1,50 @@
+{% load static%}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Personal Portfolio</title>
+    <link href="{%static "style.css"%}" rel="stylesheet" type="text/css" />
+</head>
+<div class="container">
+
+    <div class="sidebar sidebarGo">
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="">My Intro</a></li>
+                <li><a href="/blog/Service/">Service</a></li>
+                <li><a href="/blog/blog/">Blog</a></li>
+                <li><a href="/blog/Contact/">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main aboutt">
+        <div class="hamburger">
+            <img class="ham" src="{%static "images/ham.png"%}" width="23px">
+            <img class="cross" src="{%static "images/cross.jpg"%}" width="23px">
+          </div>
+        <h2>About Me</h2>
+        <div class="profile">
+            <p>I am IT Engineer.I work in Python language.
+                I use Django as a Web framework.
+                I am also interset in Data analyist and cloud Computing.I am team player and work with my team.
+                I also interset in team leading.</p>
+        </div>
+        <div class="devpicc">
+            <div class="skillcontainer">
+                <h2>My Skills</h2>
+                <div class="skillItem">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Data Analyst</li>
+                </div>
+            </div>
+
+            <img class="imgg" src="{%static "images/itt.jpg"%}">
+        </div>
+    </div>
+</div>
+<script src="{%static "index.js"%}"></script>

@@ -1,0 +1,74 @@
+{%load static%}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Personal Portfolio</title>
+  <link href="{% static 'style.css' %}"  rel="stylesheet" type="text/css" />
+</head>
+<div class="container">
+
+  <div class="sidebar sidebarGo">
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="blog/Intro/">My Intro</a></li>
+        <li><a href="/blog/Service/">Service</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="/blog/Contact/">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main blog-container">
+    <div class="hamburger">
+      <img class="ham" src="{%static "images/ham.png"%}"  width="23px">
+      <img class="cross" src="{%static "images/cross.jpg"%}" width="23px">
+    </div>
+    <div class="header" style="text-align:center">
+      <h1>Python with Django</h1>
+    </div>
+
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card">
+          <h2>What is Python</h2><br>
+          <h4>Python  aug 3, 2022</h4><br>
+          <!-- <div  img src="tkk.jpeg" class="img-thumbnail" style="width: 10px; height: 10px;;"></div> -->
+          <p>Python is a high-level, general-purpose and a very popular programming language.
+             Python programming language (latest Python 3) is being used in web development,
+              Machine Learning applications, along with all cutting edge technology in Software Industry. 
+              Python Programming Language is very well suited for Beginners,
+               also for experienced programmers with other programming languages like C++ and Java.</p>
+        </div>
+        <div class="card">
+          <h2>What is Django</h2><br>
+          <h4>D'jango  aug 3, 2022</h4><br>
+          <!-- <div class="fakeimg" style="height:200px;">Image</div> -->
+          <p>Django is a Python-based web framework that allows you to quickly create efficient web applications.
+             It is also called batteries included framework because Django provides built-in features for everything including Django Admin Interface,
+              default database – SQLlite3, etc. When you’re building a website, you always need a similar set of components:
+               a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc. 
+               Django gives you ready-made components to use and that too for rapid development.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <div class="fakeimg" style="height:100px;">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+          </div>
+          <div class="card">
+            <h3>Popular Post</h3>
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div><br>
+            <div class="fakeimg">Image</div>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <p>Some text..</p>
+          </div>
+        </div> -->
+  </div>
+</div>
+<script src="{% static 'index.js' %}"></script>

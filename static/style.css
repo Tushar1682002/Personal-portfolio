@@ -1,0 +1,392 @@
+@import url('https://fonts.google.com/specimen/Fira+Sans?query=fira');
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html,body{
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+}
+
+.sidebar {
+  background-color:grey;
+  position: absolute;
+  font-family:sans-serif;
+  height: 100vh;
+  width: 100px;
+  transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding:10px;
+    
+  }
+
+.sidebar nav li{
+  list-style: none;
+  font-size: 20px;
+  padding: 33px 0;
+}
+
+.sidebar nav li a{
+  text-decoration: none;
+  color: black;
+}
+
+.main{
+   /* background-color: yellowgreen;  */
+  width: 100vw;
+  
+  
+}
+
+.container{
+  display: flex; 
+  width: 100vw;
+  height: 100vh;
+  /* margin: 0; */
+  /* padding-left: 1px;
+  padding-top: 1px;
+  padding-right: 2px;
+  padding-bottom: 0px; */
+  
+}
+
+.infocontainer{
+    /* background-color: yellow; */
+    height: 58vh;
+    width: 80vw;
+    display: flex;
+    margin: 144px auto;
+    justify-content: space-around;
+}
+
+.devinfo{
+    display: flex;
+    margin-top: 50px;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hello{
+    font-size: 55px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.about{
+    font-size: 40px;
+}
+
+.moreabout{
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 34px;
+}
+
+.btn .btn {
+  padding: 9px 10px;
+  border-radius: 30px;
+  color: white;
+  background-color: dodgerblue;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.btn .btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.btn .btn hover{
+    color : white;
+    background-color: dodgerblue;
+}
+
+.devpic img{
+    width: 58vh;
+    margin-left: 25px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  .infocontainer {
+    display: inline;
+  }
+  .devpic{
+    margin-top: 30px;
+  }
+}
+
+/* Style inputs */
+input[type=text],input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+/* .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+} */
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  /* margin-top: 2px; */
+  padding: 20px;
+}
+
+.contact-page{
+  overflow: scroll;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.blog-container{
+  display: inline;
+  padding: 15px;
+  overflow: scroll;
+  
+}
+
+.row{
+  padding-top: 20px;
+}
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.aboutt{
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+  overflow: hidden;
+}
+
+.profile{
+  margin-top: 50px;
+  /* text-align: left; */
+  display: flex;
+}
+
+.profile p{
+  margin-right: 10px;
+}
+
+.skillcontainer{
+  padding: 12px;
+  /* margin-right: 200px; */
+  /* display: inline; */
+  
+}
+
+.skillItem{
+  align-items: left;
+  /* display: flex; */
+}
+
+
+
+
+.skillcontainer h2{
+  margin-bottom: 30px;
+  
+}
+
+.devpicc .imgg{
+  margin-right: 200px;
+  margin-top: 100px;
+  margin-left: 200px;
+  
+}
+
+.devpicc{
+  display: flex;
+  align-items: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutt {   
+    overflow: scroll;
+  }
+  .devpicc{
+    display: inline;
+    
+  }
+  .devpicc .imgg{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.sidebarGo{
+  transform: translate(-110px,0px); 
+  position: absolute;
+}
+.hamburger{
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  left: 10px;
+}
+
+.ham{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.cross {
+  margin-left: 64px;
+  margin-top: -7px;
+}
+
+.services p{
+  margin-top: 100px;
+  margin-left: 100px;
+  font-size: xx-large;
+}
+
+.main h2{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.main h3{
+  margin-top: 8px;
+  text-align: center;
+}
+
+.cardd{
+  /* background-color:#ccc; */
+  padding: 13px;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 130px;
+  
+  
+}
+.cardd1{
+  /* background-color:#ccc; */
+  padding: 13px;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 130px;  
+}
+.cardd2{
+  /* background-color:#ccc; */
+  padding: 13px;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 130px;  
+}
+.cardd3{
+  /* background-color:#ccc; */
+  padding: 13px;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 130px;  
+}
+
+
+.cardd img{
+  width: 100px;
+  height: 100px;
+} 
+ .cardd1 img{
+  width: 100px;
+  height: 100px;
+}
+ .cardd2 img{
+  width: 100px;
+  height: 100px;
+}
+ .cardd3 img{
+  width: 100px;
+  height: 100px;
+}
+
+.card-group{
+  display: flex;
+  margin-left: 230px;
+}
+
+.card-group p{
+  margin-top: 10px;
+  font-size: larger;
+}
+
+@media screen and (max-width:600px) {
+  .card-group{
+    overflow: scroll;
+    display: inline;
+  }
+
+  .services p{
+    margin-left: 62px;
+  }
+  
+}
+
